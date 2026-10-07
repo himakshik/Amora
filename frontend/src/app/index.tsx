@@ -1,6 +1,8 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { supabase } from '../lib/supabase';
 
 export default function HomeScreen() {
+  console.log('Supabase client:', !!supabase);
   return (
     <View style={styles.container}>
       <View style={styles.content}>
